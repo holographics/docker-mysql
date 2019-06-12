@@ -53,6 +53,13 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
 
 ### Basic git commands
 
+#### Get the origin
+`git remote -v`
+#### Set the origin
+`git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`
+#### Update local branch2 with origin
+`git pull origin branch2`
+
 #### To bake requirements.txt from env
 `pip freeze > requirements.txt`
 #### To install requirements.txt to env
