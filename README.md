@@ -53,12 +53,17 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
 
 ### Basic git commands
 
-#### Get the origin
+#### Get the pointer of origin
 `git remote -v`
 #### Set the origin
 `git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`
-#### Update local branch2 with origin
+#### Update local branch2 with remote branch to which origin points to
 `git pull origin branch2`
+
+#### 1. Update local branch2 my merging master into the local branch2:
+`git merge master`
+#### 2. After the merge push the updated local branch2 to remote branch2:
+`git push origin branch2`
 
 #### To bake requirements.txt from env
 `pip freeze > requirements.txt`
