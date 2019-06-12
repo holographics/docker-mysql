@@ -50,3 +50,10 @@ docker logs 74f2c0281066 2>&1 | grep GENERATED
 docker exec -it faa2e56fb5ab mysql -uroot -p
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
 ```
+
+### Basic git commands
+
+#### To bake requirements.txt from env
+`pip freeze > requirements.txt`
+#### To install requirements.txt to env
+`pip install -r requirements.txt`
