@@ -1,8 +1,6 @@
 `nano`
-#### ADD YOUR INFORMATION
-`control + X`
-`Type: Y`
-`enter`
+#### MySql Docker Official Images
+`https://hub.docker.com/_/mysql`
 
 #### Remove all containers:
 `docker rm $(docker ps -a -q)`
