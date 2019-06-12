@@ -64,8 +64,8 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
 
 #### Update local branch2 my merging master into the local branch2. After the merge push the updated local branch2 to remote branch2:
 ```
-`git merge master`
-`git push origin branch2`
+git merge master
+git push origin branch2
 ```
 #### To bake requirements.txt from env
 `pip freeze > requirements.txt`
