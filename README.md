@@ -12,6 +12,9 @@
 `docker run --expose=3333 -p 3333:3306 -e MYSQL_ROOT_PASSWORD=newpassword -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db --name wordpressdb -d mysql/mysql-server` 
 #### List running containers:
 `docker ps`
+#### See the container log:
+`docker logs 7eb19152a84f`
+`docker logs  0fcba609ce6a 2>&1 | grep GENERATED`
 #### Dial to running container bash:
 `docker exec -it 7eb19152a84f bash`
 #### Login to mysql:
