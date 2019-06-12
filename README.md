@@ -25,11 +25,12 @@
 `docker exec -it 4a0b248f06f5  mysql -uroot -pnewpassword -se "GRANT ALL PRIVILEGES ON * . * TO 'wpuser'@'%';"`
 
 #### Drop and create user:
-```DROP User 'golden'@'localhost';
+```
+DROP User 'golden'@'localhost';
 DROP User 'golden'@'%';
 CREATE USER 'golden'@'%' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON * . * TO 'golden'@'%';```
-
+GRANT ALL PRIVILEGES ON * . * TO 'golden'@'%';
+```
 #### Run mysql in safe mode to change root password:
 `mysqld_safe --skip-grant-tables --skip-networking &`
 
@@ -40,8 +41,10 @@ GRANT ALL PRIVILEGES ON * . * TO 'golden'@'%';```
 `mysqld --verbose --help | grep -A 1 "Default options"`
 
 #### For container started without flag retreive the generated password:
-```docker run --expose=3333 -p 3333:3306  -d mysql/mysql-server
+```
+docker run --expose=3333 -p 3333:3306  -d mysql/mysql-server
 docker run --expose=3333 -p 3333:3306  -d mysql/mysql-server
 docker logs 74f2c0281066 2>&1 | grep GENERATED
 docker exec -it faa2e56fb5ab mysql -uroot -p
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';```
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
+```
