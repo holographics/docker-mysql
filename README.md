@@ -1,4 +1,3 @@
-`nano`
 #### MySql Docker Official Images
 `https://hub.docker.com/_/mysql`
 
