@@ -32,3 +32,6 @@
 `DROP User 'golden'@'%';`
 `CREATE USER 'golden'@'%' IDENTIFIED BY 'password';`
 `GRANT ALL PRIVILEGES ON * . * TO 'golden'@'%';`
+
+#### Run mysql in safe mode to change root password:
+`mysqld_safe --skip-grant-tables --skip-networking &`
