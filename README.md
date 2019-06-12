@@ -35,3 +35,6 @@
 
 #### Run mysql in safe mode to change root password:
 `mysqld_safe --skip-grant-tables --skip-networking &`
+
+#### Run mysql service:
+`systemctl start mysqld.service`
