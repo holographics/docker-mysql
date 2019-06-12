@@ -11,7 +11,6 @@
 `docker ps`
 #### See the container log:
 `docker logs 7eb19152a84f`
-`docker logs  0fcba609ce6a 2>&1 | grep GENERATED`
 #### Dial to running container bash:
 `docker exec -it 7eb19152a84f bash`
 #### Login to mysql:
