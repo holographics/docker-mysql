@@ -25,10 +25,10 @@
 `docker exec -it 4a0b248f06f5  mysql -uroot -pnewpassword -se "GRANT ALL PRIVILEGES ON * . * TO 'wpuser'@'%';"`
 
 #### Drop and create user:
-`DROP User 'golden'@'localhost';`
-`DROP User 'golden'@'%';`
-`CREATE USER 'golden'@'%' IDENTIFIED BY 'password';`
-`GRANT ALL PRIVILEGES ON * . * TO 'golden'@'%';`
+```DROP User 'golden'@'localhost';
+DROP User 'golden'@'%';
+CREATE USER 'golden'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * . * TO 'golden'@'%';```
 
 #### Run mysql in safe mode to change root password:
 `mysqld_safe --skip-grant-tables --skip-networking &`
