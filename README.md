@@ -55,6 +55,8 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
 
 #### Get the pointer of origin
 `git remote -v`
+#### List branches
+`git branch --list`
 #### Set the origin
 `git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`
 #### Update local branch2 with remote branch to which origin points to
