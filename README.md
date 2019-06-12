@@ -62,7 +62,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
 #### Update local branch2 with remote branch to which origin points to
 `git pull origin branch2`
 
-#### Update local `branch2` by merging it with local `master` branch.<br/>After the merge push the updated local `branch2` to remote `branch2`:
+#### Update the local `branch2` by merging it with the local `master` branch.<br/>After the merge, push the updated local `branch2` to the remote `branch2`:
 ```
 git merge master
 git push origin branch2
