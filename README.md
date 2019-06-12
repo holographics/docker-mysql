@@ -35,3 +35,6 @@
 
 #### Run mysql service:
 `systemctl start mysqld.service`
+
+#### List all configuration files:
+`mysqld --verbose --help | grep -A 1 "Default options"`
