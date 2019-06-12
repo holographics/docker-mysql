@@ -14,7 +14,7 @@
 `docker ps`
 #### Dial to running container bash:
 `docker exec -it 7eb19152a84f bash`
-# Login to mysql:
+#### Login to mysql:
 `mysql -uroot -pnewpassword`
-# Grant root previlegies: 
+#### Grant root previlegies: 
 `GRANT ALL PRIVILEGES ON * . * TO 'wpuser'@'%';`
