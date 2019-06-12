@@ -18,3 +18,6 @@
 `mysql -uroot -pnewpassword`
 #### Grant root previlegies to wpuser: 
 `GRANT ALL PRIVILEGES ON * . * TO 'wpuser'@'%';`
+
+#### Login to mysql running on container in one line:
+`docker exec -it 7eb19152a84f mysql -uroot -pnewpassword`
