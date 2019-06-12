@@ -14,8 +14,10 @@
 #### Dial to running container bash:
 `docker exec -it 7eb19152a84f bash`
 #### Login to mysql:
-`mysql -uroot -pnewpassword`
-`mysql -uwpuser -pwpuser@`
+```
+mysql -uroot -pnewpassword
+mysql -uwpuser -pwpuser@
+```
 #### Grant root previlegies to wpuser: 
 `GRANT ALL PRIVILEGES ON * . * TO 'wpuser'@'%';`
 
