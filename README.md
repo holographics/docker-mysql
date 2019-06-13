@@ -19,8 +19,7 @@ mysql -uroot -pnewpassword
 mysql -uwpuser -pwpuser@
 ```
 #### Grant root previlegies to wpuser: 
-`GRANT ALL PRIVILEGES ON * . * TO 'wpuser'@'%';`
-
+`GRANT ALL PRIVILEGES ON * . * TO 'wpuser'@'%' WITH GRANT OPTION;`
 #### Login to mysql running on container in one line:
 `docker exec -it 7eb19152a84f mysql -uroot -pnewpassword`
 #### Set mysql user permission in one line:
@@ -35,16 +34,17 @@ GRANT ALL PRIVILEGES ON * . * TO 'golden'@'%';
 ```
 #### Run mysql in safe mode to change root password:
 `mysqld_safe --skip-grant-tables --skip-networking &`
-
 #### Run mysql service:
 `systemctl start mysqld.service`
-
 #### List all configuration files:
 `mysqld --verbose --help | grep -A 1 "Default options"`
-
 #### To run sql script as root:
 `mysql -uroot -pnewpassword < my_script.sql`
-
+#### To create user and grant all rights:
+```
+CREATE USER 'golden'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * . * TO 'golden'@'%' WITH GRANT OPTION;
+```
 #### For container started without flag retreive the generated password:
 ```
 docker run --expose=3333 -p 3333:3306  -d mysql/mysql-server
@@ -66,7 +66,6 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
 `git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`
 #### Update local branch2 with remote branch to which origin points to
 `git pull origin branch2`
-
 #### Update the local `master` by downloading the remote `master`:
 ```
 git checkout master
