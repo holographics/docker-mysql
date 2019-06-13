@@ -49,6 +49,9 @@ docker exec -it faa2e56fb5ab mysql -uroot -p
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
 ```
 
+
+
+
 ### Basic git commands
 
 #### Get the pointer of origin
