@@ -57,8 +57,10 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
 
 #### Get the pointer of origin
 `git remote -v`
-#### List branches
+#### List local branches
 `git branch --list`
+#### List remote branches
+`git branch -r`
 #### add all deleted files:
 `git rm $(git ls-files --deleted)`
 #### Set the origin
