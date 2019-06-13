@@ -23,7 +23,7 @@ mysql -uwpuser -pwpuser@
 #### Login to mysql running on container in one line:
 `docker exec -it 7eb19152a84f mysql -uroot -pnewpassword`
 #### Set mysql user permission in one line:
-`docker exec -it 4a0b248f06f5  mysql -uroot -pnewpassword -se "GRANT ALL PRIVILEGES ON * . * TO 'wpuser'@'%';"`
+`docker exec -it 4a0b248f06f5  mysql -uroot -pnewpassword -se "GRANT ALL PRIVILEGES ON * . * TO 'wpuser'@'%' WITH GRANT OPTION;"`
 
 ### Basic MySql commands:
 
