@@ -42,6 +42,9 @@ GRANT ALL PRIVILEGES ON * . * TO 'golden'@'%';
 #### List all configuration files:
 `mysqld --verbose --help | grep -A 1 "Default options"`
 
+#### To run sql script as root:
+`mysql -uroot -pnewpassword < my_script.sql`
+
 #### For container started without flag retreive the generated password:
 ```
 docker run --expose=3333 -p 3333:3306  -d mysql/mysql-server
