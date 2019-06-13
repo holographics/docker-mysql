@@ -25,7 +25,7 @@ mysql -uwpuser -pwpuser@
 #### Set mysql user permission in one line:
 `docker exec -it 4a0b248f06f5  mysql -uroot -pnewpassword -se "GRANT ALL PRIVILEGES ON * . * TO 'wpuser'@'%';"`
 
-### MySql basic commands:
+### Basic MySql commands:
 
 #### Run mysql in safe mode to change root password:
 `mysqld_safe --skip-grant-tables --skip-networking &`
