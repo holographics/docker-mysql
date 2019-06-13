@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/pasha/PycharmProjects/test6/docker-mysql/env"
+VIRTUAL_ENV="/Users/pasha/PycharmProjects/test11/docker-mysql/env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

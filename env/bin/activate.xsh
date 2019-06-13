@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"/Users/pasha/PycharmProjects/test6/docker-mysql/env"
+$VIRTUAL_ENV = r"/Users/pasha/PycharmProjects/test11/docker-mysql/env"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]
