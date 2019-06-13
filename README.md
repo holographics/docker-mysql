@@ -31,6 +31,7 @@ mysql -uwpuser -pwpuser@
 `mysqld_safe --skip-grant-tables --skip-networking &`
 #### Run mysql service:
 `systemctl start mysqld.service`
+`brew services start mysql`
 #### List all configuration files:
 `mysqld --verbose --help | grep -A 1 "Default options"`
 #### To run sql script as root:
