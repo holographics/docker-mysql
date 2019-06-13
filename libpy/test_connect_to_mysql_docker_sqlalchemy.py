@@ -9,7 +9,7 @@ db_url = 'localhost:3333'
 db_name = 'wordpress_db'
 db_user = 'wpuser'
 db_password = 'wpuser@'
-address = f'mysql://{db_user}:{db_password}@{db_url}/{db_name}'
+address = f'mysql+mysqlconnector://{db_user}:{db_password}@{db_url}/{db_name}'
 # address = 'mysql://wpuser:wpuser@localhost:3333/wordpress_db'
 
 
@@ -21,7 +21,7 @@ Base = declarative_base()
 print(dir(engine))
 print(engine.table_names())
 
-exit()
+
 class Entity():
     id = Column(Integer, primary_key=True)
     created_at = Column(DateTime)
