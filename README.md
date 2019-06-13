@@ -57,6 +57,8 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
 `git remote -v`
 #### List branches
 `git branch --list`
+#### add all deleted files:
+`git rm $(git ls-files --deleted)`
 #### Set the origin
 `git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`
 #### Update local branch2 with remote branch to which origin points to
