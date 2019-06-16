@@ -32,6 +32,7 @@ mysql -uwpuser -pwpuser@
 #### Run mysql service:
 `systemctl start mysqld.service`
 `brew services start mysql`
+`brew services stop grafana`
 #### List all configuration files:
 `mysqld --verbose --help | grep -A 1 "Default options"`
 #### To run sql script as root:
