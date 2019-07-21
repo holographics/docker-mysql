@@ -8,10 +8,10 @@
 #### Remove all images:
 `docker rmi $(docker images -q)`
 #### Run in background:
-`docker run --expose=3333 -p 3333:3306 -e MYSQL_ROOT_PASSWORD=newpassword -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db --name wordpressdb -d mysql/mysql-server` 
+`docker run --expose=3333 -p 3333:3306 -e MYSQL_ROOT_PASSWORD=newpassword -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db --name mysqldb -d mysql/mysql-server` 
 #### Run to console:
 ```
-docker run --expose=3306 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=newpassword -e MYSQL_USER=pivanov -e MYSQL_PASSWORD=newpassword -e MYSQL_DATABASE=mysql --name mysql -it mysql/mysql-server
+docker run --expose=3306 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=newpassword -e MYSQL_USER=pivanov -e MYSQL_PASSWORD=newpassword -e MYSQL_DATABASE=mysql --name mysqldb -it mysql/mysql-server
 ```
 #### List running containers:
 `docker ps`
