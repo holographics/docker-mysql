@@ -51,14 +51,18 @@ docker exec -it faa2e56fb5ab mysql -uroot -p
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
 ```
 
-### Basic git commands
-####
+
+### Basic MySQL
 ```
 SELECT User FROM mysql.user;
 UPDATE mysql.user SET user='golden_1'  WHERE user='golden';
 UPDATE mysql.user SET plugin='mysql_native_password'  WHERE user='golden_1';
 UPDATE mysql.user SET plugin='caching_sha2_password'  WHERE user='golden_1';
 ```
+```
+UPDATE mysql.user SET plugin = 'mysql_native_password' WHERE User = 'root'
+```
+### Basic git
 #### Get the pointer of origin
 `git remote -v`
 #### List local branches
