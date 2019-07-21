@@ -90,3 +90,7 @@ git push origin branch2
 `pip freeze > requirements.txt`
 #### To install requirements.txt to env
 `pip install -r requirements.txt`
+### Modify MySql config
+```
+vim  /etc/my.cnf
+```
