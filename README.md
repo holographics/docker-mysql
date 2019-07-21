@@ -94,3 +94,17 @@ git push origin branch2
 ```
 vim  /etc/my.cnf
 ```
+#### Kill process
+```
+msqld status
+msqld stop
+msqld start
+msqld restart
+```
+
+#### Kill process
+```
+yum install
+lsof -i:3306
+kill -9 PROCESS_NUMBER
+```
