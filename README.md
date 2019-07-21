@@ -15,6 +15,7 @@ docker run --expose=3306 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root-password -e MY
 ```
 ```
 docker exec -it c56a56c11257  mysql -uroot -proot-password -se "GRANT ALL PRIVILEGES ON * . * TO 'api-user'@'%' WITH GRANT OPTION;"
+```
 #### List running containers:
 `docker ps`
 #### See the container log:
